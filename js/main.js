@@ -79,14 +79,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const teamData = [
     { name: 'Rafael Fajardo', role: 'Liderança & Direção Criativa' },
     { name: 'Julie Fajardo', role: 'Liderança & Visão de Negócio' },
-    { name: 'Julie Fajardo', role: 'Direção de Arte & Audiovisual' },
     { name: 'Gabriel', role: 'Equipe Criativa' },
     { name: 'Gustavo', role: 'Equipe Criativa' },
-    { name: 'Mariana', role: 'Equipe Criativa' },
+    { name: 'Mari', role: 'Equipe Criativa' },
     { name: 'Alice', role: 'Equipe Criativa' },
+    { name: 'Carol', role: 'Equipe Criativa' },
     { name: 'Magno', role: 'Equipe Criativa' },
     { name: 'Raquel', role: 'Equipe Criativa' },
-    { name: 'Stefani', role: 'Equipe Criativa' }
+    { name: 'Stefanie', role: 'Equipe Criativa' }
   ];
 
   const bgSlides = document.querySelectorAll('#siteBgSlideshow .site-bg-slide');
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (bgSlides.length > 1) {
     let currentIndex = 0;
-    const intervalTime = 3500; // 3.5 segundos por foto (ritmo mais dinâmico e suave)
+    const intervalTime = 3500; // 3.5 segundos por foto
 
     function advanceSlide() {
       const prevIndex = currentIndex;
