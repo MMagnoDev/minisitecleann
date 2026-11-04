@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agência Minimum | Identidades Visuais Autênticas e Minimalistas</title>
+  <title>Clean Design | Identidades Visuais Autênticas e Minimalistas</title>
   <meta name="description"
-    content="Design minimalista e estratégico para transformar a essência do seu negócio em uma presença marcante. Mais de 5.000 clientes fazem parte da nossa história.">
+    content="Sua marca merece ser Clean. Identidade visual, estratégia e presença digital para transformar a essência do seu negócio em uma marca forte e reconhecida. Mais de 8 mil empreendedores atendidos no Brasil e no exterior.">
 
   <!-- Google Fonts: Cormorant Garamond + Manrope -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,42 +19,23 @@
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="icon" type="image/png" href="favicon.png">
 
   <!-- Anti-Cache Meta Tags -->
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
 
-  <!-- Preload Background Images (Mobile & Desktop) -->
-  <link rel="preload" as="image" href="bg.png" media="(max-width: 768px)">
-  <link rel="preload" as="image" href="bg-desk.png" media="(min-width: 769px)">
+  <!-- Preload Primeiras Imagens do Time -->
+  <link rel="preload" as="image" href="TIME/RAFAEL.webp">
+  <link rel="preload" as="image" href="TIME/JULIE.webp">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/style.css?v=20261104_v16">
+  <link rel="stylesheet" href="css/style.css?v=20261104_speed2">
 
-  <!-- Efeito Pulso WhatsApp Garantido & Fundo Responsivo -->
+  <!-- Efeito Pulso WhatsApp Garantido -->
   <style>
-    /* Imagem de Fundo Responsiva: bg.png no Mobile e bg-desk.png no Desktop */
-    .site-bg-image {
-      position: absolute !important;
-      inset: 0 !important;
-      width: 100% !important;
-      height: 100% !important;
-      background-image: url('bg.png') !important;
-      background-size: cover !important;
-      background-position: center center !important;
-      background-repeat: no-repeat !important;
-      transform: scale(1.02);
-    }
-
-    @media (min-width: 769px) {
-      .site-bg-image {
-        background-image: url('bg-desk.png') !important;
-      }
-    }
-    /* ===== WHATSAPP: PULSO AUTOMÁTICO =====
-       Obs: propriedades animadas NÃO usam !important (o !important bloqueia animações) */
+    /* ===== WHATSAPP: PULSO AUTOMÁTICO ===== */
     #btnMenuWhatsApp {
       position: relative !important;
       overflow: visible !important;
@@ -99,7 +80,7 @@
       animation-delay: 0.45s;
     }
 
-    /* Brilho que "respira" ao redor do botão */
+    /* Brilho que respira ao redor do botão */
     #btnMenuWhatsApp .whatsapp-pulse-glow {
       position: absolute;
       inset: 0;
@@ -132,9 +113,18 @@
 
 <body>
 
-  <!-- IMAGEM DE FUNDO RESPONSIVA (bg.png no mobile / bg-desk.png no desktop) -->
-  <div class="site-bg-wrapper" aria-hidden="true">
-    <div class="site-bg-image"></div>
+  <!-- FUNDO RESPONSIVO DINÂMICO: SLIDESHOW SUAVE DAS FOTOS DO TIME -->
+  <div class="site-bg-wrapper" aria-hidden="true" id="siteBgSlideshow">
+    <div class="site-bg-slide is-active" style="background-image: url('TIME/RAFAEL.webp');"></div>
+    <div class="site-bg-slide" style="background-image: url('TIME/JULIE.webp');"></div>
+    <div class="site-bg-slide" style="background-image: url('TIME/6eec3cb0-1dd4-4fa1-ab88-b04118c278f6.jpg');"></div>
+    <div class="site-bg-slide" style="background-image: url('TIME/GABRIEL.webp');"></div>
+    <div class="site-bg-slide" style="background-image: url('TIME/GUSTAVO.webp');"></div>
+    <div class="site-bg-slide" style="background-image: url('TIME/MARIANA.webp');"></div>
+    <div class="site-bg-slide" style="background-image: url('TIME/ALICE.webp');"></div>
+    <div class="site-bg-slide" style="background-image: url('TIME/MAGNO.webp');"></div>
+    <div class="site-bg-slide" style="background-image: url('TIME/RAQUEL.webp');"></div>
+    <div class="site-bg-slide" style="background-image: url('TIME/STEFANI.webp');"></div>
     <div class="site-bg-overlay"></div>
   </div>
 
@@ -144,42 +134,46 @@
     <div class="hero-content-grid" id="heroContentGrid">
       <div class="hero-left-column">
 
-        <!-- LOGO OFICIAL DA AGÊNCIA MINIMUM -->
+        <!-- LOGO OFICIAL DA AGÊNCIA CLEAN -->
         <div class="brand-identity-block">
-          <a href="/" class="brand-hero-logo-link" aria-label="Agência Minimum Início">
-            <img src="logo.png" alt="Agência Minimum" class="brand-hero-logo">
+          <a href="https://www.cleandesignn.com.br/" class="brand-hero-logo-link" aria-label="Clean Design Início">
+            <img src="logo.png" alt="Clean Design" class="brand-hero-logo">
           </a>
         </div>
 
         <!-- TOPO — ABAIXO DA LOGO -->
         <div class="brand-tagline-block">
           <h1 class="brand-tagline">
-            Sua marca merece ser reconhecida.
+            Sua marca merece ser Clean.
           </h1>
           <p class="brand-credentials">
-            Design minimalista e estratégico para transformar a essência do seu negócio em uma presença marcante.
+            Identidade visual, estratégia e presença digital para transformar a essência do seu negócio em uma marca forte e reconhecida.
           </p>
+          <div class="brand-social-proof">
+            <i class="ph-bold ph-seal-check"></i>
+            <span>Mais de 8 mil empreendedores atendidos no Brasil e no exterior.</span>
+          </div>
         </div>
 
         <!-- MENU PRINCIPAL: 4 BOTÕES PRINCIPAIS -->
         <nav class="vertical-links-menu" aria-label="Menu Principal">
 
-          <!-- Botão 1: Sobre (Abre a apresentação da agência) -->
+          <!-- Botão 1: Sobre (Abre a apresentação da Clean) -->
           <button type="button" class="menu-item-btn" data-open-modal="aboutModal" id="btnMenuAbout">
             <span class="item-icon-box"><i class="ph ph-info"></i></span>
             <span class="item-label">Sobre</span>
             <i class="ph ph-arrow-up-right item-arrow"></i>
           </button>
 
-          <!-- Botão 2: Site oficial (Abre o site da Minimum) -->
-          <a href="https://www.agenciaminimum.com/" target="_blank" rel="noopener" class="menu-item-btn" id="btnMenuWebsite">
+          <!-- Botão 2: Site oficial (Abre o site da agência) -->
+          <a href="https://www.cleandesignn.com.br/" target="_blank" rel="noopener" class="menu-item-btn" id="btnMenuWebsite">
             <span class="item-icon-box"><i class="ph ph-globe"></i></span>
             <span class="item-label">Site oficial</span>
             <i class="ph ph-arrow-up-right item-arrow"></i>
           </a>
 
           <!-- Botão 3: WhatsApp (Abre uma conversa com a equipe - Destaque visual) -->
-          <a href="https://wa.me/5521974959975?text=Ol%C3%A1%2C%20equipe%20Minimum!%20Vim%20pelo%20link%20da%20bio%20e%20gostaria%20de%20conhecer%20as%20possibilidades%20para%20a%20minha%20marca."
+          <a href="https://wa.me/5521981940538?text=Ol%C3%A1%2C%20equipe%20Clean!%20Vim%20pelo%20link%20da%20bio%20e%20gostaria%20de%20conhecer%20as%20possibilidades%20para%20a%20minha%20marca."
             target="_blank" rel="noopener" class="menu-item-btn highlight-cta whatsapp-highlight" id="btnMenuWhatsApp">
             <span class="whatsapp-pulse-glow" aria-hidden="true"></span>
             <span class="whatsapp-pulse-ring" aria-hidden="true"></span>
@@ -202,24 +196,24 @@
         <div class="hero-quick-footer">
           <div class="social-links-row">
 
-            <!-- Bolinha 1: Ícone do Instagram (Instagram da agência) -->
-            <a href="https://www.instagram.com/agenciaminimum/" target="_blank" rel="noopener"
-              class="social-pill-link social-instagram" aria-label="Instagram da agência"
-              title="Instagram da agência">
+            <!-- Bolinha 1: Ícone do Instagram (Perfil da Clean) -->
+            <a href="https://www.instagram.com/clean.designn/" target="_blank" rel="noopener"
+              class="social-pill-link social-instagram" aria-label="Instagram da Clean"
+              title="Instagram (@clean.designn)">
               <i class="ph-bold ph-instagram-logo"></i>
             </a>
 
-            <!-- Bolinha 2: Ícone do Pinterest (Pinterest da agência) -->
-            <a href="https://br.pinterest.com/agenciaminimumdesign/" target="_blank" rel="noopener"
-              class="social-pill-link social-pinterest" aria-label="Pinterest da agência"
-              title="Pinterest da agência">
+            <!-- Bolinha 2: Ícone do Pinterest (Perfil da Clean) -->
+            <a href="https://br.pinterest.com/cleandesignn/" target="_blank" rel="noopener"
+              class="social-pill-link social-pinterest" aria-label="Pinterest da Clean"
+              title="Pinterest oficial da Clean">
               <i class="ph-bold ph-pinterest-logo"></i>
             </a>
 
             <!-- Bolinha 3: Ícone de site (Site oficial) -->
-            <a href="https://www.agenciaminimum.com/" target="_blank" rel="noopener"
-              class="social-pill-link social-website" aria-label="Site oficial"
-              title="Site oficial">
+            <a href="https://www.cleandesignn.com.br/" target="_blank" rel="noopener"
+              class="social-pill-link social-website" aria-label="Site oficial da Clean"
+              title="Site oficial (cleandesignn.com.br)">
               <i class="ph-bold ph-globe"></i>
             </a>
 
@@ -232,7 +226,7 @@
 
 
   <!-- ========================================================================= -->
-  <!-- MODAL: SOBRE (APRESENTAÇÃO DA AGÊNCIA)                                   -->
+  <!-- MODAL: SOBRE (APRESENTAÇÃO DA CLEAN)                                     -->
   <!-- ========================================================================= -->
   <div class="custom-modal-backdrop" id="aboutModal" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="custom-modal-dialog size-large">
@@ -240,7 +234,7 @@
         <header class="modal-card-header">
           <div class="modal-heading-group">
             <span class="modal-kicker"><i class="ph ph-info"></i> Apresentação</span>
-            <h2 class="modal-title">Sobre a Agência Minimum</h2>
+            <h2 class="modal-title">Sobre a Clean Design</h2>
           </div>
           <button type="button" class="modal-close-btn" data-close-modal title="Fechar janela" aria-label="Fechar">
             <i class="ph ph-x"></i>
@@ -252,24 +246,47 @@
 
             <!-- Coluna de Destaques & Credenciais -->
             <div class="about-highlight-box">
+              
+              <!-- Showcase do Time com transição suave -->
+              <div class="team-showcase-card">
+                <div class="team-photo-slider" id="aboutTeamSlider">
+                  <img src="TIME/RAFAEL.webp" alt="Rafael Fajardo" class="team-photo-slide is-active">
+                  <img src="TIME/JULIE.webp" alt="Julie Fajardo" class="team-photo-slide">
+                  <img src="TIME/6eec3cb0-1dd4-4fa1-ab88-b04118c278f6.jpg" alt="Julie Fajardo" class="team-photo-slide">
+                  <img src="TIME/GABRIEL.webp" alt="Gabriel" class="team-photo-slide">
+                  <img src="TIME/GUSTAVO.webp" alt="Gustavo" class="team-photo-slide">
+                  <img src="TIME/MARIANA.webp" alt="Mariana" class="team-photo-slide">
+                  <img src="TIME/ALICE.webp" alt="Alice" class="team-photo-slide">
+                  <img src="TIME/MAGNO.webp" alt="Magno" class="team-photo-slide">
+                  <img src="TIME/RAQUEL.webp" alt="Raquel" class="team-photo-slide">
+                  <img src="TIME/STEFANI.webp" alt="Stefani" class="team-photo-slide">
+                  <div class="team-photo-gradient"></div>
+                </div>
+                <div class="team-showcase-caption">
+                  <span class="team-caption-kicker">Time Clean Design</span>
+                  <span class="team-caption-name" id="aboutTeamMemberName">Rafael Fajardo</span>
+                  <span class="team-caption-role" id="aboutTeamMemberRole">Liderança &amp; Direção Criativa</span>
+                </div>
+              </div>
+
               <div class="about-stats-list">
                 <div class="stat-item">
-                  <span class="stat-number">+5.000</span>
-                  <span class="stat-label">Clientes na nossa história</span>
+                  <span class="stat-number">+8.000</span>
+                  <span class="stat-label">Empreendedores atendidos</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-number">Rio de Janeiro</span>
-                  <span class="stat-label">Sede e alcance global</span>
+                  <span class="stat-number">Brasil &amp; Exterior</span>
+                  <span class="stat-label">Presença internacional</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-number">Rafael Fajardo</span>
+                  <span class="stat-number">Rafael &amp; Julie</span>
                   <span class="stat-label">Liderança e direção criativa</span>
                 </div>
               </div>
 
               <div class="about-quote-box">
                 <i class="ph ph-quotes"></i>
-                <p>“Design minimalista e estratégico para transformar a essência do seu negócio em uma presença marcante.”</p>
+                <p>“Sua marca tem uma história. Vamos descobrir a melhor forma de apresentá-la ao mundo?”</p>
               </div>
             </div>
 
@@ -278,32 +295,32 @@
               <div class="mission-section-card">
                 <div class="mission-text-content">
                   <h3 class="about-lead-title">
-                    Criamos marcas com essência e personalidade.
+                    Transformamos sonhos em marcas.
                   </h3>
 
                   <p class="editorial-body">
-                    Somos a <strong>Agência Minimum</strong>, especializada em identidades visuais autênticas e minimalistas. Unimos criatividade e estratégia para representar o que torna cada negócio único.
+                    A <strong>Clean Design</strong> nasceu para dar forma às ideias de quem empreende. Criamos marcas autênticas e minimalistas, com estratégia e atenção aos detalhes que tornam cada negócio único.
                   </p>
 
                   <p class="editorial-body">
-                    Liderada por <strong>Rafael Fajardo</strong> e sediada no <strong>Rio de Janeiro</strong>, nossa equipe desenvolve soluções que conectam a identidade da sua marca à forma como ela se apresenta ao mundo.
+                    Sob a liderança de <strong>Rafael Fajardo</strong> e <strong>Julie Fajardo</strong>, conectamos design e visão de negócio para construir uma presença consistente, da identidade visual à comunicação digital.
                   </p>
 
                   <p class="editorial-body highlight-lead">
-                    Quer descobrir o que podemos criar para a sua?
+                    Sua marca tem uma história. Vamos descobrir a melhor forma de apresentá-la ao mundo?
                   </p>
 
-                  <!-- Chamada ao final: Fale com a nossa equipe -->
+                  <!-- Chamada ao final: Quero conversar sobre minha marca -->
                   <div class="editorial-cta-banner cta-whatsapp-banner">
                     <div class="cta-banner-info">
                       <span class="cta-banner-kicker">Pronto para dar o próximo passo?</span>
                       <strong class="cta-banner-title">Conecte-se diretamente conosco</strong>
                     </div>
                     <div class="cta-banner-buttons">
-                      <a href="https://wa.me/5521974959975?text=Ol%C3%A1%2C%20equipe%20Minimum!%20Vim%20pelo%20link%20da%20bio%20e%20gostaria%20de%20conhecer%20as%20possibilidades%20para%20a%20minha%20marca."
+                      <a href="https://wa.me/5521981940538?text=Ol%C3%A1%2C%20equipe%20Clean!%20Vim%20pelo%20link%20da%20bio%20e%20gostaria%20de%20conhecer%20as%20possibilidades%20para%20a%20minha%20marca."
                         target="_blank" rel="noopener" class="primary-action-btn cta-whatsapp-btn">
                         <i class="ph-bold ph-whatsapp-logo"></i>
-                        <span>Fale com a nossa equipe</span>
+                        <span>Quero conversar sobre minha marca</span>
                       </a>
                     </div>
                   </div>
@@ -329,7 +346,7 @@
           <div class="modal-heading-group">
             <span class="modal-kicker"><i class="ph ph-stack"></i> Nossas Soluções</span>
             <h2 class="modal-title">Serviços</h2>
-            <p class="modal-subtitle">Como podemos transformar a sua marca?</p>
+            <p class="modal-subtitle">O que sua marca precisa para dar o próximo passo?</p>
           </div>
           <button type="button" class="modal-close-btn" data-close-modal title="Fechar janela" aria-label="Fechar">
             <i class="ph ph-x"></i>
@@ -337,21 +354,26 @@
         </header>
 
         <div class="modal-card-body custom-scrollbar">
+
+          <!-- Texto de Introdução dos Serviços -->
+          <p class="services-intro-description">
+            Da criação da identidade à presença digital, desenvolvemos soluções para diferentes momentos do seu negócio.
+          </p>
           
-          <!-- Grid dos 7 Serviços da Agência Minimum -->
+          <!-- Grid dos 6 Serviços da Clean Design -->
           <div class="services-clean-grid">
 
-            <!-- 1. Identidade visual -->
+            <!-- 1. Identidade visual e branding -->
             <div class="service-clean-card">
               <div class="service-clean-header">
                 <span class="service-clean-icon"><i class="ph ph-palette"></i></span>
-                <h3 class="service-clean-title">Identidade visual</h3>
+                <h3 class="service-clean-title">Identidade visual e branding</h3>
               </div>
               <p class="service-clean-desc">
-                Logotipo, cores, tipografia e elementos gráficos que expressam a personalidade do seu negócio.
+                Logotipo, cores, tipografia e elementos visuais que expressam sua essência e tornam sua marca reconhecível.
               </p>
-              <a href="https://wa.me/5521974959975?text=Ol%C3%A1%2C%20equipe%20Minimum!%20Gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20Identidade%20Visual%20para%20a%20minha%20marca."
-                target="_blank" rel="noopener" class="service-whatsapp-btn" title="Falar no WhatsApp sobre Identidade visual">
+              <a href="https://wa.me/5521981940538?text=Ol%C3%A1%2C%20equipe%20Clean!%20Gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20Identidade%20Visual%20e%20Branding."
+                target="_blank" rel="noopener" class="service-whatsapp-btn" title="Falar no WhatsApp sobre Identidade visual e branding">
                 <i class="ph-bold ph-whatsapp-logo"></i>
                 <span>Falar sobre Identidade visual</span>
                 <i class="ph ph-arrow-up-right"></i>
@@ -365,9 +387,9 @@
                 <h3 class="service-clean-title">Naming</h3>
               </div>
               <p class="service-clean-desc">
-                Criação de nomes que traduzem a essência e a proposta da sua marca.
+                Criação de nomes e conceitos que dão personalidade e significado ao seu negócio.
               </p>
-              <a href="https://wa.me/5521974959975?text=Ol%C3%A1%2C%20equipe%20Minimum!%20Gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20Naming%20para%20a%20minha%20marca."
+              <a href="https://wa.me/5521981940538?text=Ol%C3%A1%2C%20equipe%20Clean!%20Gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20Naming."
                 target="_blank" rel="noopener" class="service-whatsapp-btn" title="Falar no WhatsApp sobre Naming">
                 <i class="ph-bold ph-whatsapp-logo"></i>
                 <span>Falar sobre Naming</span>
@@ -375,84 +397,67 @@
               </a>
             </div>
 
-            <!-- 3. Estratégia e posicionamento digital -->
+            <!-- 3. Posicionamento e estratégia digital -->
             <div class="service-clean-card">
               <div class="service-clean-header">
                 <span class="service-clean-icon"><i class="ph ph-compass"></i></span>
-                <h3 class="service-clean-title">Estratégia e posicionamento digital</h3>
+                <h3 class="service-clean-title">Posicionamento e estratégia digital</h3>
               </div>
               <p class="service-clean-desc">
-                Direcionamento para comunicar seu diferencial e apresentar sua marca com mais clareza.
+                Análise e direcionamento para destacar seus diferenciais e comunicar sua marca com mais clareza.
               </p>
-              <a href="https://wa.me/5521974959975?text=Ol%C3%A1%2C%20equipe%20Minimum!%20Gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20Estrat%C3%A9gia%20e%20Posicionamento%20Digital%20para%20a%20minha%20marca."
-                target="_blank" rel="noopener" class="service-whatsapp-btn" title="Falar no WhatsApp sobre Estratégia e posicionamento digital">
+              <a href="https://wa.me/5521981940538?text=Ol%C3%A1%2C%20equipe%20Clean!%20Gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20Posicionamento%20e%20Estrat%C3%A9gia%20Digital."
+                target="_blank" rel="noopener" class="service-whatsapp-btn" title="Falar no WhatsApp sobre Posicionamento e estratégia digital">
                 <i class="ph-bold ph-whatsapp-logo"></i>
                 <span>Falar sobre Estratégia</span>
                 <i class="ph ph-arrow-up-right"></i>
               </a>
             </div>
 
-            <!-- 4. Design para redes sociais -->
+            <!-- 4. Social media e conteúdo -->
             <div class="service-clean-card">
               <div class="service-clean-header">
                 <span class="service-clean-icon"><i class="ph ph-device-mobile"></i></span>
-                <h3 class="service-clean-title">Design para redes sociais</h3>
+                <h3 class="service-clean-title">Social media e conteúdo</h3>
               </div>
               <p class="service-clean-desc">
-                Posts, templates, capas e roteiros para construir uma presença visual consistente.
+                Posts, textos, templates e roteiros para aproximar sua marca do público e manter uma comunicação consistente.
               </p>
-              <a href="https://wa.me/5521974959975?text=Ol%C3%A1%2C%20equipe%20Minimum!%20Gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20Design%20para%20Redes%20Sociais."
-                target="_blank" rel="noopener" class="service-whatsapp-btn" title="Falar no WhatsApp sobre Design para redes sociais">
+              <a href="https://wa.me/5521981940538?text=Ol%C3%A1%2C%20equipe%20Clean!%20Gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20Social%20Media%20e%20Conte%C3%BAdo."
+                target="_blank" rel="noopener" class="service-whatsapp-btn" title="Falar no WhatsApp sobre Social media e conteúdo">
                 <i class="ph-bold ph-whatsapp-logo"></i>
                 <span>Falar sobre Redes Sociais</span>
                 <i class="ph ph-arrow-up-right"></i>
               </a>
             </div>
 
-            <!-- 5. Minisites e sites institucionais -->
+            <!-- 5. Sites, landing pages e minisites -->
             <div class="service-clean-card">
               <div class="service-clean-header">
                 <span class="service-clean-icon"><i class="ph ph-browser"></i></span>
-                <h3 class="service-clean-title">Minisites e sites institucionais</h3>
+                <h3 class="service-clean-title">Sites, landing pages e minisites</h3>
               </div>
               <p class="service-clean-desc">
-                Seu negócio em um espaço próprio, pensado para apresentar seus serviços e facilitar novos contatos.
+                Espaços digitais para apresentar seu negócio, valorizar seus serviços e transformar interesse em contato.
               </p>
-              <a href="https://wa.me/5521974959975?text=Ol%C3%A1%2C%20equipe%20Minimum!%20Gostaria%20de%20saber%20mais%20sobre%20a%20cria%C3%A7%C3%A3o%20de%20Minisites%20e%20Sites%20Institucionais."
-                target="_blank" rel="noopener" class="service-whatsapp-btn" title="Falar no WhatsApp sobre Minisites e sites institucionais">
+              <a href="https://wa.me/5521981940538?text=Ol%C3%A1%2C%20equipe%20Clean!%20Gostaria%20de%20saber%20mais%20sobre%20a%20cria%C3%A7%C3%A3o%20de%20Sites%2C%20Landing%20Pages%20e%20Minisites."
+                target="_blank" rel="noopener" class="service-whatsapp-btn" title="Falar no WhatsApp sobre Sites, landing pages e minisites">
                 <i class="ph-bold ph-whatsapp-logo"></i>
                 <span>Falar sobre Sites</span>
                 <i class="ph ph-arrow-up-right"></i>
               </a>
             </div>
 
-            <!-- 6. Design para papelaria e impressos -->
-            <div class="service-clean-card">
-              <div class="service-clean-header">
-                <span class="service-clean-icon"><i class="ph ph-package"></i></span>
-                <h3 class="service-clean-title">Design para papelaria e impressos</h3>
-              </div>
-              <p class="service-clean-desc">
-                Criação visual de layouts para cartões, embalagens, rótulos e materiais institucionais, prontos para você contratar e produzir na gráfica ou papelaria da sua preferência.
-              </p>
-              <a href="https://wa.me/5521974959975?text=Ol%C3%A1%2C%20equipe%20Minimum!%20Gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20Design%20para%20Papelaria%20e%20Impressos."
-                target="_blank" rel="noopener" class="service-whatsapp-btn" title="Falar no WhatsApp sobre Design para papelaria e impressos">
-                <i class="ph-bold ph-whatsapp-logo"></i>
-                <span>Falar sobre Papelaria</span>
-                <i class="ph ph-arrow-up-right"></i>
-              </a>
-            </div>
-
-            <!-- 7. Ensaios com inteligência artificial -->
+            <!-- 6. Ensaios com inteligência artificial -->
             <div class="service-clean-card">
               <div class="service-clean-header">
                 <span class="service-clean-icon"><i class="ph ph-sparkle"></i></span>
                 <h3 class="service-clean-title">Ensaios com inteligência artificial</h3>
               </div>
               <p class="service-clean-desc">
-                Imagens produzidas com IA para complementar a comunicação visual da sua marca.
+                Imagens produzidas com IA para complementar a apresentação e a comunicação visual do seu negócio.
               </p>
-              <a href="https://wa.me/5521974959975?text=Ol%C3%A1%2C%20equipe%20Minimum!%20Gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20Ensaios%20com%20Intelig%C3%AAncia%20Artificial."
+              <a href="https://wa.me/5521981940538?text=Ol%C3%A1%2C%20equipe%20Clean!%20Gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20Ensaios%20com%20Intelig%C3%AAncia%20Artificial."
                 target="_blank" rel="noopener" class="service-whatsapp-btn" title="Falar no WhatsApp sobre Ensaios com inteligência artificial">
                 <i class="ph-bold ph-whatsapp-logo"></i>
                 <span>Falar sobre Ensaios com IA</span>
@@ -465,17 +470,17 @@
           <!-- Banner de Fechamento & Chamada Final -->
           <div class="services-footer-banner">
             <div class="services-footer-text">
-              <span class="services-footer-kicker">Vamos começar?</span>
+              <span class="services-footer-kicker">Vamos conversar?</span>
               <p class="services-footer-lead">
-                Não sabe por onde começar? Conte sua ideia e vamos descobrir juntos o próximo passo.
+                <strong>Não sabe qual solução faz sentido para você?</strong> Conte seu momento e vamos explorar as possibilidades.
               </p>
             </div>
-            <!-- Chamada ao final: Conversar sobre minha marca -->
+            <!-- Chamada ao final: Descobrir o próximo passo -->
             <div class="services-footer-action">
-              <a href="https://wa.me/5521974959975?text=Ol%C3%A1%2C%20equipe%20Minimum!%20Vim%20pelo%20link%20da%20bio%20e%20gostaria%20de%20conhecer%20as%20possibilidades%20para%20a%20minha%20marca."
+              <a href="https://wa.me/5521981940538?text=Ol%C3%A1%2C%20equipe%20Clean!%20Vim%20pelo%20link%20da%20bio%20e%20gostaria%20de%20conhecer%20as%20possibilidades%20para%20a%20minha%20marca."
                 target="_blank" rel="noopener" class="primary-action-btn cta-whatsapp-btn">
                 <i class="ph-bold ph-whatsapp-logo"></i>
-                <span>Conversar sobre minha marca</span>
+                <span>Descobrir o próximo passo</span>
               </a>
             </div>
           </div>
@@ -487,7 +492,7 @@
 
 
   <!-- JavaScript -->
-  <script src="js/main.js?v=20261104_v1"></script>
+  <script src="js/main.js?v=20261104_speed2"></script>
 </body>
 
 </html>
